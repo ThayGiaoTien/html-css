@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dogs table</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200,200,200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+        
+        td, th {
+            border: 1px solid rgb(190,190,190);
+            padding: 10px 20px;
+        }
+        
+        th {
+            background-color: rgb(235,23,235);
+        }
+        
+        td {
+            text-align: center;
+        }
+        
+       
+        
+        td {
+            background-color: rgb(245,245,5);
+        }
+        
+        caption {
+            padding: 10px;
+            background-color: red;
+        }
+        </style>    
+        
+  </head>
+  <body>
+    <h1>Dogs Table</h1>
+
+    <table>
+      <tr>
+        <th>&nbsp;</th>
+        <th>Knocky</th>
+        <th>Flor</th>
+        <th>Ella</th>
+        <th>Juan</th>
+      </tr>
+      <tr>
+        <td>Breed</td>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Owner</td>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+      </tr>
+      <tr>
+        <td>Eating Habits</td>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+      </tr>
+      <caption>This is table of information about some dogs</caption>
+    </table>
+    <table>
+      <caption>
+        This is advanced features of table with using attributes like scope, id, header,thead-body-foot
+      </caption>
+      <thead>
+        <tr>
+          <th id="purchase">Purchase</th>
+          <th id="location">Location</th>
+          <th id="date">Date</th>
+          <th id="evaluation">Evaluation</th>
+          <th id="cost">Cost (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th id="haircut">Haircut</th>
+        <td headers="location haircut">Hairdresser</td>
+        <td headers="date haircut">12/09</td>
+        <td headers="evaluation haircut">Great idea</td>
+        <td headers="cost haircut">30</td>
+      </tr>
+    <thead>
+        <tr>
+          <th scope="col">Purchase</th>
+          <th scope="col">Location</th>
+          <th scope="col">Date</th>
+          <th scope="col">Evaluation</th>
+          <th scope="col">Cost (€)</th>
+        </tr>
+      </thead>
+      <tr>
+        <th scope="row">Haircut</th>
+        <td>Hairdresser</td>
+        <td>12/09</td>
+        <td>Great idea</td>
+        <td>30</td>
+    </table>
+
+
+  </body>
+</html>
